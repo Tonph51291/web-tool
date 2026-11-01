@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+uploads/proofs/*
+!uploads/proofs/.gitkeep
+*.log
+.DS_Store
