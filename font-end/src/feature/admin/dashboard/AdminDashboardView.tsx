@@ -13,9 +13,11 @@ import {
   FileSpreadsheet,
   PlusCircle,
   ArrowRight,
+  ShieldAlert,
   Send,
   Eye,
   Key,
+  Flame,
 } from "lucide-react";
 
 export function AdminDashboardView() {
@@ -94,7 +96,7 @@ export function AdminDashboardView() {
             </div>
           </div>
           <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-slate-400 font-mono text-[10px]">
-            <span className="truncate max-w-[120px]" title="payments = 'PAID'">payments = &apos;PAID&apos;</span>
+            <span className="truncate max-w-[120px]" title="payments = 'PAID'">payments = 'PAID'</span>
             <span className="bg-slate-100 px-1.5 py-0.5 rounded text-slate-700 font-medium">38 GD thành công</span>
           </div>
         </div>
@@ -232,33 +234,30 @@ export function AdminDashboardView() {
               <button
                 type="button"
                 onClick={() => setTimeRange("7d")}
-                className={`px-3 py-1 rounded-md transition-all ${
-                  timeRange === "7d"
-                    ? "bg-white text-[#004ac6] font-bold shadow-xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
+                className={`px-3 py-1 rounded-md transition-all ${timeRange === "7d"
+                  ? "bg-white text-[#004ac6] font-bold shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+                  }`}
               >
                 7 ngày qua
               </button>
               <button
                 type="button"
                 onClick={() => setTimeRange("30d")}
-                className={`px-3 py-1 rounded-md transition-all ${
-                  timeRange === "30d"
-                    ? "bg-white text-[#004ac6] font-bold shadow-xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
+                className={`px-3 py-1 rounded-md transition-all ${timeRange === "30d"
+                  ? "bg-white text-[#004ac6] font-bold shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+                  }`}
               >
                 30 ngày qua
               </button>
               <button
                 type="button"
                 onClick={() => setTimeRange("quarter")}
-                className={`px-3 py-1 rounded-md transition-all ${
-                  timeRange === "quarter"
-                    ? "bg-white text-[#004ac6] font-bold shadow-xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
+                className={`px-3 py-1 rounded-md transition-all ${timeRange === "quarter"
+                  ? "bg-white text-[#004ac6] font-bold shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+                  }`}
               >
                 Quý này
               </button>
